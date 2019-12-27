@@ -12,6 +12,7 @@ public class demo
 	{
     	Reporter.log(country,true);
     	Reporter.log(city, true);
+    	Reporter.log("testng parameters passed", true);
 		
 	}
 }
