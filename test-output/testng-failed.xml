@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+  <parameter name="browsername" value="firefox"/>
+  <parameter name="appurl" value="https://demo.actitime.com/login.do"/>
+  <test name="chromeTest">
+    <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browsername" value="chrome"/>
+    <parameter name="appurl" value="https://demo.actitime.com/login.do"/>
+    <classes>
+      <class name="Com.Actitime.Tests.ValidLoginLogoutTest"/>
+      <class name="Com.Actitime.Tests.VerifyversionTest"/>
+      <class name="Com.Actitime.Tests.InvalidLoginTest"/>
+    </classes>
+  </test> <!-- chromeTest -->
+  <test name="FirefoxTest">
+    <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browsername" value="firefox"/>
+    <parameter name="appurl" value="https://demo.actitime.com/login.do"/>
+    <classes>
+      <class name="Com.Actitime.Tests.ValidLoginLogoutTest"/>
+      <class name="Com.Actitime.Tests.VerifyversionTest"/>
+      <class name="Com.Actitime.Tests.InvalidLoginTest"/>
+    </classes>
+  </test> <!-- FirefoxTest -->
+</suite> <!-- Failed suite [Suite] -->
